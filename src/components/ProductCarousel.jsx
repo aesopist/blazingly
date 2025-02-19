@@ -20,7 +20,7 @@ const products = [
     name: 'TikTok Shop Mastery',
     description: 'Learn how I made 7-figures on TikTok Shop',
     price: 997.00,
-    image: 'products/sunscreen.jpg',
+    image: 'products/tiktok-mastery.webp',
     link: 'https://blaz.ing/tiktok-mastery'
   },
   {
