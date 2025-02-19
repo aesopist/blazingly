@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/pagination';
 
 const formatPrice = (price) => {
   const [dollars, cents] = price.toFixed(2).split('.');
@@ -40,8 +41,11 @@ export const ProductCarousel = () => {
         spaceBetween={20}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
-        className="pb-8"
+        pagination={{
+          clickable: true,
+          dynamicBullets: true
+        }}
+        className="pb-12"
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="flex items-center justify-center py-8">
