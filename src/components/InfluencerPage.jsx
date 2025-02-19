@@ -6,9 +6,9 @@ const InfluencerPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* Header/Bio Section */}
-      <div className="w-full max-w-2xl mx-auto pt-8 px-4">
+      <div className="w-full max-w-2xl mx-auto pt-4 md:pt-8 px-4">
         {/* Profile Image */}
-        <div className="flex flex-col items-center mb-4">
+        <div className="flex flex-col items-center mb-2 md:mb-4">
           <div className="w-20 h-20 rounded-full overflow-hidden mb-2">
             <img 
               src="profile.jpg" 
@@ -20,14 +20,14 @@ const InfluencerPage = () => {
         </div>
 
         {/* Bio */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-2 md:mb-5">
           <p className="text-gray-700">
             TikTok shop's Final Boss | Ex creator's corner schizo Demon | Free agent
           </p>
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-4 mb-5">
+        <div className="flex justify-center gap-4 mb-2 md:mb-5">
           <a 
             href="https://instagram.com/69kov" 
             className="p-2 rounded-full hover:bg-gray-100 transition-colors"
@@ -56,7 +56,7 @@ const InfluencerPage = () => {
 
         {/* Products Section */}
         <div className="mb-5">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+          <h2 className="text-xl font-semibold text-gray-900 mb-2 md:mb-4 text-center">
             Levi's Top Picks
           </h2>
           <ProductCarousel />

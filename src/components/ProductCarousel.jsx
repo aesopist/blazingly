@@ -45,10 +45,10 @@ export const ProductCarousel = () => {
           clickable: true,
           dynamicBullets: true
         }}
-        className="pb-12"
+        className="pb-8 md:pb-12"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id} className="flex items-center justify-center py-8">
+          <SwiperSlide key={product.id} className="flex items-center justify-center py-2 md:py-8">
             <div className="w-full max-w-md mx-auto px-4">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-w-1 aspect-h-1 w-full">
