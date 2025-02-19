@@ -3,6 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/blazingly/',
-  plugins: [react()],
-  base: '/blazingly/',
+  plugins: [react()]
 })
