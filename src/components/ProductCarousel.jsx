@@ -52,11 +52,13 @@ export const ProductCarousel = () => {
             <div className="w-full max-w-md mx-auto px-4">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-w-1 aspect-h-1 w-full">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                  />
+                  <a href={product.link} className="block w-full h-full">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                    />
+                  </a>
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
